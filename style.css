@@ -18,3 +18,8 @@ body{
     height: 300px;
     width: auto;
 }
+#bottomDiv{
+    padding-top: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
