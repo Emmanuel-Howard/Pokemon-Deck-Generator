@@ -6,9 +6,13 @@ body{
 }
 #generateBtn{
     border-radius: 7px;
-    background-color: rgb(36, 79, 235);
+    background-color: rgb(77, 189, 230);
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+#generateBtn:hover{
+    background-color: rgb(55, 115, 228);
 }
 #topCard{
     height: 300px;
