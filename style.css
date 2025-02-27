@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(229, 229, 82);
+}
+#topDiv{
+    text-align: center;
+}
+#generateBtn{
+    border-radius: 7px;
+    background-color: rgb(36, 79, 235);
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#topCard{
+    height: 300px;
+    width: auto;
+}
