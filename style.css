@@ -19,7 +19,12 @@ body{
     width: auto;
 }
 #bottomDiv{
-    padding-top: 100px;
+    padding-top: 50px;
     text-align: center;
     margin: 0 auto;
+}
+.emptyCard{
+    height: 300px;
+    width: auto;
+    padding: 10px;
 }
