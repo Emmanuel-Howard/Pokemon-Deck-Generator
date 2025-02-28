@@ -22,8 +22,13 @@ body{
     padding-top: 50px;
     text-align: center;
     margin: 0 auto;
-}ob
-.emptyCard{
+}
+.emptyCard {
+    height: 300px;
+    width: 200px;  /* Fixed width to maintain consistency */
+    object-fit: cover;  /* Ensures the image fills the space */
+}
+#randomImage{
     height: 300px;
     width: auto;
     padding: 10px;
