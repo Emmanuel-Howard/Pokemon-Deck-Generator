@@ -6,6 +6,7 @@ const emptyCard1 = document.getElementById("emptyCard1");
 const emptyCard2 = document.getElementById("emptyCard2");
 const emptyCard3 = document.getElementById("emptyCard3");
 const emptyCard4 = document.getElementById("emptyCard4");
+let cards = [emptyCard1, emptyCard2,emptyCard3, emptyCard4]
 let cardList = [
     "Pokemon Cards/bulbasaur.webp",
     "Pokemon Cards/charizard.png",
@@ -17,7 +18,6 @@ let cardList = [
     "Pokemon Cards/squirtle.png"
 ];
 
-
 // On click function
 generateBtn.onclick = function generate(){
     let randomImage = cardList[Math.floor(Math.random() * cardList.length)];
@@ -25,14 +25,19 @@ generateBtn.onclick = function generate(){
     changeImage(randomImage)
 };
 
+// Change image (deck) function
 function changeImage(randomImage){
-   let cards = [emptyCard1, emptyCard2,emptyCard3, emptyCard4]
 
    for (let i = 0; i < cards.length; i++){
     if (cards[i].src.includes("backofcard.jpg")){
         cards[i].src = randomImage;
         return;
     }
+   }
+// Check if all slots are filled
+   let allFilled = cards.every(card => !card.src.includes("backofcard.jpg"));
 
+   if (allFilled){
+    console.log("Your deck is now full!")
    }
 };
