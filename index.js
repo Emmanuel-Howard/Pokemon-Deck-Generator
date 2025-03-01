@@ -2,6 +2,7 @@
 
 const generateBtn = document.getElementById("generateBtn");
 const topCard = document.getElementById("topCard");
+const yourDeck = document.getElementById("yourDeck");
 const emptyCard1 = document.getElementById("emptyCard1");
 const emptyCard2 = document.getElementById("emptyCard2");
 const emptyCard3 = document.getElementById("emptyCard3");
@@ -38,6 +39,6 @@ function changeImage(randomImage){
    let allFilled = cards.every(card => !card.src.includes("backofcard.jpg"));
 
    if (allFilled){
-    console.log("Your deck is now full!")
+    yourDeck.textContent = "Your deck is now complete!"
    }
 };
