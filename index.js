@@ -26,6 +26,14 @@ generateBtn.onclick = function generate(){
 };
 
 function changeImage(randomImage){
-    document.getElementById("emptyCard1").src = randomImage;
-};
+   let cards = [emptyCard1, emptyCard2,emptyCard3, emptyCard4]
 
+   for (let i = 0; i < 4; i++){
+    if (cards[i].scroll.includes("Pokemon Cards/backofcard.jpg")){
+        slots[i] = randomImage;
+        return;
+    }
+
+   }
+   console.log("Your deck is complete!")
+};
