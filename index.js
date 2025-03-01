@@ -28,12 +28,11 @@ generateBtn.onclick = function generate(){
 function changeImage(randomImage){
    let cards = [emptyCard1, emptyCard2,emptyCard3, emptyCard4]
 
-   for (let i = 0; i < 4; i++){
-    if (cards[i].scroll.includes("Pokemon Cards/backofcard.jpg")){
-        slots[i] = randomImage;
+   for (let i = 0; i < cards.length; i++){
+    if (cards[i].src.includes("backofcard.jpg")){
+        cards[i].src = randomImage;
         return;
     }
 
    }
-   console.log("Your deck is complete!")
 };
